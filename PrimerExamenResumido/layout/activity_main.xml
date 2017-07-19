@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android7ed.examenandroid.MainActivity">
+
+    <EditText
+        android:id="@+id/etEntrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="66dp"
+        android:ems="10"
+        android:hint="@string/etEntrada"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEntrada"
+        android:layout_alignStart="@+id/etEntrada"
+        android:layout_below="@+id/etEntrada"
+        android:layout_marginTop="29dp"
+        android:text="@string/bImagen" />
+</RelativeLayout>

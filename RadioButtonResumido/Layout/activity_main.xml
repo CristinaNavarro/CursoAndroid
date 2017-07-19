@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android7ed.radiobutton.MainActivity">
+
+    <TextView
+        android:id="@+id/tvApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvApellidos"
+        android:layout_marginTop="27dp"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre"
+        android:layout_marginLeft="53dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/etApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/etApellidos"
+        android:inputType="textPersonName"
+        android:layout_marginTop="26dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvApellidos"
+        android:layout_marginLeft="53dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvNombre"
+        android:layout_marginLeft="53dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/etNombre"
+        android:inputType="textPersonName"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombre"
+        android:layout_marginLeft="53dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvSexo"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/etApellidos"
+        android:layout_marginLeft="53dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/bAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bAceptar"
+        android:layout_marginTop="58dp"
+        app:layout_constraintTop_toBottomOf="@+id/rgSexo"
+        android:layout_marginLeft="63dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/bCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bCancelar"
+        android:layout_marginTop="58dp"
+        app:layout_constraintTop_toBottomOf="@+id/rgSexo"
+        app:layout_constraintLeft_toRightOf="@+id/bAceptar"
+        android:layout_marginLeft="77dp" />
+
+    <RadioGroup
+        android:id="@+id/rgSexo"
+        android:layout_width="292dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="34dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSexo">
+
+        <RadioButton
+            android:id="@+id/rbMujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/rbMujer"
+            tools:layout_editor_absoluteX="174dp"
+            tools:layout_editor_absoluteY="393dp" />
+
+        <RadioButton
+            android:id="@+id/rbHombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rbHombre"
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="487dp" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/InfoPantallaEncendida"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/PantallaEncendida" />
+
+    
+     <TextView
+        android:id="@+id/InfoPantallaApagada"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/PantallaApagada" />
+     
+         <TextView
+        android:id="@+id/InfoLlamada"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Llamada" />
+         
+         
+      <TextView
+        android:id="@+id/InfoLWifi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Wifi" />
+      
+      
+        <TextView
+        android:id="@+id/InfoPantallaActiva"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/PantallaActiva" />
+
+    <TextView
+        android:id="@+id/headphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/headphone" />
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android7ed.calculadoracpi.MainCPI"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <EditText
+        android:id="@+id/entrada"
+        android:layout_width="131dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginStart="67dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bEntra"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="67dp" />
+
+    <Button
+        android:id="@+id/bEntra"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="97dp"
+        android:onClick="onClick"
+        android:text="@string/entra"
+        app:layout_constraintLeft_toRightOf="@+id/entrada"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/bSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/suma"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bResta"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/bResta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:onClick="onClick"
+        android:text="@string/resta"
+        app:layout_constraintBottom_toTopOf="@+id/bDivide"
+        app:layout_constraintLeft_toRightOf="@+id/bSuma"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/bMultiplicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/mult"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bDivide"
+        app:layout_constraintRight_toLeftOf="@+id/bDivide"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/bDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:onClick="onClick"
+        android:text="@string/divide"
+        app:layout_constraintBottom_toBottomOf="@+id/bResultado"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/bResta"
+        app:layout_constraintRight_toRightOf="@+id/bResta"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/bResultado"
+        android:layout_width="88dp"
+        android:layout_height="175dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="49dp"
+        android:onClick="onClick"
+        android:text="@string/res"
+        app:layout_constraintLeft_toRightOf="@+id/bResta"
+        app:layout_constraintTop_toBottomOf="@+id/bEntra"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/mostrar"
+        android:layout_width="249dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="47dp"
+        app:layout_constraintTop_toBottomOf="@+id/bDivide"
+        tools:layout_editor_absoluteX="36dp"
+        tools:text="Resultado" />
+
+    <TextView
+        android:id="@+id/secuencia"
+        android:layout_width="245dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/entrada"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="36dp" />
+
+
+</android.support.constraint.ConstraintLayout>
