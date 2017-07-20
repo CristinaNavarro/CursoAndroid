@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Banderas</string>
+    <string name="bPrimero">1</string>
+    <string name="bSegundo">2</string>
+    <string name="bTercero">3</string>
+    <string name="bCuarto">4</string>
+    <string name="etPintar">Introduce un numero</string>
+    <string name="bPintar">Pintar</string>
+</resources>
